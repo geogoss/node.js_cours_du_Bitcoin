@@ -59,3 +59,32 @@ server.listen(port, hostname, () => {
 
 - [ ]  Le package Express → on peut l’installer en local
 
+- [ ]  Utilisation des Scripts dans le package json pour se faliciter la vie
+    
+    exemple : créer un script pour clear le terminal et lancer le serveur
+    
+    ajout de la ligne → "dev" : "clear && nodemon index.js",
+    
+    ```jsx
+    {
+      "name": "projet_test_npm",
+      "version": "1.0.0",
+      "description": "",
+      "main": "index.js",
+      "scripts": {
+        "dev" : "clear && nodemon index.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+      },
+      "author": "geogoss",
+      "license": "MIT",
+      "dependencies": {
+        "express": "^4.18.2"
+      }
+    }
+    ```
+    
+    Et dans le terminal → npm run dev
+
+
+
+    
